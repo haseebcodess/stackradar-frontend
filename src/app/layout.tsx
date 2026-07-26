@@ -28,7 +28,12 @@ export const metadata: Metadata = {
     'upwork skills demand',
     'programming language popularity',
   ],
-  authors: [{ name: 'Muhammad Haseeb Ur Rehman', url: 'https://github.com/haseebcodess' }],
+  authors: [
+    {
+      name: 'Muhammad Haseeb Ur Rehman',
+      url: 'https://github.com/haseebcodess',
+    },
+  ],
   creator: 'Muhammad Haseeb Ur Rehman',
   publisher: 'StackRadar',
   robots: {
@@ -72,11 +77,15 @@ export const metadata: Metadata = {
     canonical: 'https://stackradar-dev.vercel.app',
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'vyJycu4ZxnyHOe0ushH5fxzlgsq_62d_o9I2OM0KLk8',
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <head>
