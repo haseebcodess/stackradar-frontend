@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import PageLayout from '@/components/PageLayout'
 
 const SKILLS = [
@@ -41,14 +42,23 @@ export default function DeveloperPage() {
         </div>
 
         <div className="flex" style={{ gap: 36, alignItems: 'flex-start' }}>
+          {/* Profile picture */}
           <div style={{
-            width: 100, height: 100, borderRadius: '50%', flexShrink: 0,
-            background: 'linear-gradient(135deg, #FF6B4A 0%, #FFC93C 100%)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 42, boxShadow: '0 8px 24px rgba(255,107,74,0.3)',
+            width: 110, height: 110, borderRadius: '50%',
+            flexShrink: 0, overflow: 'hidden',
+            border: '3px solid #FF6B4A',
+            boxShadow: '0 8px 24px rgba(255,107,74,0.25)',
           }}>
-            👨‍💻
+            <Image
+              src="/profile.jpeg"
+              alt="Muhammad Haseeb Ur Rehman"
+              width={110}
+              height={110}
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              priority
+            />
           </div>
+
           <div>
             <h1 style={{
               fontSize: 30, fontWeight: 800, color: '#1F2937',
