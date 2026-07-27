@@ -123,8 +123,11 @@ export const metadata: Metadata = {
     canonical: 'https://stackradar-dev.vercel.app',
   },
   verification: {
-    google: 'vyJycu4ZxnyHOe0ushH5fxzlgsq_62d_o9I2OM0KLk8',
+  google: 'vyJycu4ZxnyHOe0ushH5fxzlgsq_62d_o9I2OM0KLk8',
+  other: {
+    'msvalidate.01': 'C5B69267DEEA4D40FA3765ECD5754B83',
   },
+},
 }
 
 export default function RootLayout({
