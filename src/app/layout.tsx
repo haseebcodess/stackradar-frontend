@@ -101,11 +101,11 @@ export const metadata: Metadata = {
       'next. Free AI-powered tech stack trend analyzer.',
     images: [
       {
-        url: '/og-image.jpeg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'StackRadar — AI Tech Stack Trend Analyzer',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     description:
       'Real data from 65,437 developers. Find your skill gap ' +
       'and know exactly what to learn next.',
-    images: ['/og-image.jpeg'],
+    images: ['/og-image.png'],
     creator: '@haseebcodess',
     site: '@haseebcodess',
   },
@@ -178,7 +178,7 @@ export default function RootLayout({
                     'Tech Stack Comparison',
                     '6-Month AI Forecast',
                   ],
-                  screenshot: 'https://stackradar-dev.vercel.app/og-image.jpeg',
+                  screenshot: 'https://stackradar-dev.vercel.app/og-image.png',
                   author: {
                     '@type': 'Person',
                     name: 'Muhammad Haseeb Ur Rehman',
