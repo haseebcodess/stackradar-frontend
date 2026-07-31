@@ -139,6 +139,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Lahore, Pakistan" />
