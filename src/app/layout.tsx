@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     'to learn next. Free market demand analysis, skill gap checker and ' +
     '6-month AI forecast.',
   keywords: [
-    // High volume — broad intent
     'best programming language to learn 2024',
     'what programming language should I learn',
     'most popular programming languages',
@@ -29,8 +28,6 @@ export const metadata: Metadata = {
     'best framework for web development',
     'node js vs java',
     'flutter vs react native',
-
-    // Medium volume — comparison intent
     'tech stack comparison',
     'MERN stack vs MEAN stack',
     'what is the best stack for web development',
@@ -46,8 +43,6 @@ export const metadata: Metadata = {
     'mongodb vs firebase',
     'docker vs kubernetes beginner',
     'aws vs azure for developers',
-
-    // Low volume — high intent, easy to rank
     'tech stack analyzer tool',
     'programming skill gap checker',
     'what should a developer learn next',
@@ -89,6 +84,14 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.png', type: 'image/png', sizes: '16x16' },
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -123,11 +126,11 @@ export const metadata: Metadata = {
     canonical: 'https://stackradar-dev.vercel.app',
   },
   verification: {
-  google: 'vyJycu4ZxnyHOe0ushH5fxzlgsq_62d_o9I2OM0KLk8',
-  other: {
-    'msvalidate.01': 'C5B69267DEEA4D40FA3765ECD5754B83',
+    google: 'vyJycu4ZxnyHOe0ushH5fxzlgsq_62d_o9I2OM0KLk8',
+    other: {
+      'msvalidate.01': 'C5B69267DEEA4D40FA3765ECD5754B83',
+    },
   },
-},
 }
 
 export default function RootLayout({
@@ -138,9 +141,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Lahore, Pakistan" />
         <meta name="geo.position" content="31.5204;74.3587" />
@@ -149,6 +153,15 @@ export default function RootLayout({
         <meta name="revisit-after" content="7 days" />
         <meta name="rating" content="general" />
         <meta name="theme-color" content="#FF6B4A" />
+        <meta name="application-name" content="StackRadar" />
+        <meta name="generator" content="Next.js" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="color-scheme" content="light" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta name="twitter:label1" content="Data Source" />
+        <meta name="twitter:data1" content="Stack Overflow Survey 2024" />
+        <meta name="twitter:label2" content="Developers Surveyed" />
+        <meta name="twitter:data2" content="65,437" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -197,6 +210,25 @@ export default function RootLayout({
                       'https://linkedin.com/in/haseebcodess',
                       'https://haseeb-codess-portfolio.netlify.app',
                     ],
+                  },
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://stackradar-dev.vercel.app/#website',
+                  url: 'https://stackradar-dev.vercel.app',
+                  name: 'StackRadar',
+                  description: 'AI-powered tech stack trend analyzer',
+                  publisher: {
+                    '@id': 'https://stackradar-dev.vercel.app/#webapp',
+                  },
+                  potentialAction: {
+                    '@type': 'SearchAction',
+                    target: {
+                      '@type': 'EntryPoint',
+                      urlTemplate:
+                        'https://stackradar-dev.vercel.app/?q={search_term_string}',
+                    },
+                    'query-input': 'required name=search_term_string',
                   },
                 },
                 {
