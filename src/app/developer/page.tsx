@@ -22,7 +22,7 @@ const PROJECTS = [
     name: 'Portfolio',
     desc: 'Personal developer portfolio showcasing projects, skills, and experience as a MERN stack developer.',
     tech: ['React.js', 'Tailwind CSS', 'Netlify'],
-    link: 'https://haseeb-codess-portfolio.netlify.app',
+    link: 'https://haseebio-portfolio.netlify.app',
     label: 'Visit →',
   },
 ]
@@ -107,9 +107,9 @@ export default function DeveloperPage() {
         <div className="flex flex-wrap gap-3">
           {[
             { icon: '📧', label: 'Email',     value: 'haseebur4322@gmail.com',             href: 'mailto:haseebur4322@gmail.com' },
-            { icon: '💼', label: 'LinkedIn',  value: 'linkedin.com/in/haseebcodess',        href: 'https://linkedin.com/in/haseebcodess' },
-            { icon: '🐙', label: 'GitHub',    value: 'github.com/haseebcodess',             href: 'https://github.com/haseebcodess' },
-            { icon: '🌐', label: 'Portfolio', value: 'haseeb-codess-portfolio.netlify.app', href: 'https://haseeb-codess-portfolio.netlify.app' },
+            { icon: '💼', label: 'LinkedIn',  value: 'linkedin.com/in/haseebcodess',        href: 'https://linkedin.com/in/haseebio' },
+            { icon: '🐙', label: 'GitHub',    value: 'github.com/haseebcodess',             href: 'https://github.com/haseebio' },
+            { icon: '🌐', label: 'Portfolio', value: 'haseeb-codess-portfolio.netlify.app', href: 'https://haseebio-portfolio.netlify.app' },
           ].map((link, i) => (
             <a key={i} href={link.href}
               target="_blank" rel="noopener noreferrer"
@@ -278,7 +278,7 @@ export default function DeveloperPage() {
             style={{ fontSize: 12, padding: '10px 20px', textDecoration: 'none' }}>
             Get in Touch →
           </a>
-          <a href="https://haseeb-codess-portfolio.netlify.app"
+          <a href="https://haseebio-portfolio.netlify.app"
             target="_blank" rel="noopener noreferrer"
             className="btn-outline"
             style={{ fontSize: 12, padding: '10px 20px', textDecoration: 'none' }}>
