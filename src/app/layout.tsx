@@ -59,15 +59,19 @@ export const metadata: Metadata = {
     'best skills for freelance developer',
     'upwork skills demand 2024',
     'fiverr best developer skills',
-    'Pakistani developer career guide',
     'software developer career path 2024',
     'programming language popularity chart',
     'google trends programming languages',
+    'developer tools free',
+    'tech career guidance tool',
+    'which framework to learn 2024',
+    'developer skill assessment free',
+    'programming market analysis',
   ],
   authors: [
     {
       name: 'Muhammad Haseeb Ur Rehman',
-      url: 'https://github.com/haseebcodess',
+      url: 'https://github.com/haseebio',
     },
   ],
   creator: 'Muhammad Haseeb Ur Rehman',
@@ -119,8 +123,8 @@ export const metadata: Metadata = {
       'Real data from 65,437 developers. Find your skill gap ' +
       'and know exactly what to learn next.',
     images: ['/og-image.png'],
-    creator: '@haseebcodess',
-    site: '@haseebcodess',
+    creator: '@haseebio_dev',
+    site: '@haseebio_dev',
   },
   alternates: {
     canonical: 'https://stackradar-dev.vercel.app',
@@ -145,8 +149,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
-        <meta name="geo.region" content="PK" />
-        <meta name="geo.placename" content="Lahore, Pakistan" />
+        <meta name="geo.region" content="PK-PB" />
+        <meta name="geo.placename" content="Lahore, Punjab, Pakistan" />
         <meta name="geo.position" content="31.5204;74.3587" />
         <meta name="ICBM" content="31.5204, 74.3587" />
         <meta name="language" content="English" />
@@ -157,6 +161,7 @@ export default function RootLayout({
         <meta name="generator" content="Next.js" />
         <meta name="referrer" content="origin-when-cross-origin" />
         <meta name="color-scheme" content="light" />
+        <meta name="format-detection" content="telephone=no" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta name="twitter:label1" content="Data Source" />
         <meta name="twitter:data1" content="Stack Overflow Survey 2024" />
@@ -180,10 +185,13 @@ export default function RootLayout({
                   applicationCategory: 'DeveloperApplication',
                   operatingSystem: 'Web',
                   browserRequirements: 'Requires JavaScript',
+                  inLanguage: 'en',
+                  isAccessibleForFree: true,
                   offers: {
                     '@type': 'Offer',
                     price: '0',
                     priceCurrency: 'USD',
+                    availability: 'https://schema.org/InStock',
                   },
                   featureList: [
                     'Market Demand Analysis',
@@ -191,24 +199,43 @@ export default function RootLayout({
                     'Skill Gap Analysis',
                     'Tech Stack Comparison',
                     '6-Month AI Forecast',
+                    'Tech Battle Comparisons',
                   ],
                   screenshot: 'https://stackradar-dev.vercel.app/og-image.png',
+                  image: 'https://stackradar-dev.vercel.app/og-image.png',
                   author: {
                     '@type': 'Person',
+                    '@id': 'https://stackradar-dev.vercel.app/#author',
                     name: 'Muhammad Haseeb Ur Rehman',
-                    url: 'https://github.com/haseebcodess',
+                    url: 'https://haseebio-portfolio.netlify.app',
                     image: 'https://stackradar-dev.vercel.app/profile.jpeg',
                     jobTitle: 'Full Stack Developer',
-                    alumniOf: 'University of Punjab',
+                    worksFor: {
+                      '@type': 'Organization',
+                      name: 'Freelance',
+                    },
+                    alumniOf: {
+                      '@type': 'EducationalOrganization',
+                      name: 'University of Punjab',
+                      address: {
+                        '@type': 'PostalAddress',
+                        addressLocality: 'Lahore',
+                        addressCountry: 'PK',
+                      },
+                    },
                     address: {
                       '@type': 'PostalAddress',
                       addressLocality: 'Lahore',
+                      addressRegion: 'Punjab',
                       addressCountry: 'PK',
                     },
                     sameAs: [
-                      'https://github.com/haseebcodess',
-                      'https://linkedin.com/in/haseebcodess',
-                      'https://haseeb-codess-portfolio.netlify.app',
+                      'https://github.com/haseebio',
+                      'https://www.linkedin.com/in/haseebio',
+                      'https://haseebio-portfolio.netlify.app',
+                      'https://www.facebook.com/haseebio.dev',
+                      'https://www.twitter.com/haseebio_dev',
+                      'https://www.instagram.com/haseebio.dev',
                     ],
                   },
                 },
@@ -217,9 +244,11 @@ export default function RootLayout({
                   '@id': 'https://stackradar-dev.vercel.app/#website',
                   url: 'https://stackradar-dev.vercel.app',
                   name: 'StackRadar',
-                  description: 'AI-powered tech stack trend analyzer',
+                  description:
+                    'Free AI-powered tech stack trend analyzer for developers',
+                  inLanguage: 'en',
                   publisher: {
-                    '@id': 'https://stackradar-dev.vercel.app/#webapp',
+                    '@id': 'https://stackradar-dev.vercel.app/#author',
                   },
                   potentialAction: {
                     '@type': 'SearchAction',
@@ -230,6 +259,29 @@ export default function RootLayout({
                     },
                     'query-input': 'required name=search_term_string',
                   },
+                },
+                {
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    {
+                      '@type': 'ListItem',
+                      position: 1,
+                      name: 'Home',
+                      item: 'https://stackradar-dev.vercel.app',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 2,
+                      name: 'About',
+                      item: 'https://stackradar-dev.vercel.app/about',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 3,
+                      name: 'Developer',
+                      item: 'https://stackradar-dev.vercel.app/developer',
+                    },
+                  ],
                 },
                 {
                   '@type': 'FAQPage',
@@ -272,6 +324,30 @@ export default function RootLayout({
                       acceptedAnswer: {
                         '@type': 'Answer',
                         text: 'The highest demand skills for freelance developers are JavaScript, Python, TypeScript, React, Node.js, PostgreSQL, Docker and AWS. Use StackRadar skill analysis to check your specific gaps against current market demand.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'Is StackRadar free to use?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. StackRadar is completely free. No signup, no subscription, no paywall. All features including market demand analysis, growth trends, skill analysis and tech battle comparisons are available for free.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'What is the MERN stack?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'MERN stack is MongoDB, Express.js, React and Node.js — the most popular full stack combination for modern web development. According to Stack Overflow Survey 2024, React is used by 29.3% and Node.js by 30.2% of all developers.',
+                      },
+                    },
+                    {
+                      '@type': 'Question',
+                      name: 'PostgreSQL vs MySQL which is better?',
+                      acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'PostgreSQL at 39% usage is ahead of MySQL at 32.2% among developers in 2024. PostgreSQL handles complex queries, JSON data and large scale apps better than MySQL. Most modern stacks are moving to PostgreSQL.',
                       },
                     },
                   ],

@@ -82,9 +82,9 @@ export default function Footer() {
           </div>
           <div style={{ display: 'flex', gap: 16 }}>
             {[
-              { label: 'GitHub',    href: 'https://github.com/haseebcodess' },
-              { label: 'LinkedIn',  href: 'https://linkedin.com/in/haseebcodess' },
-              { label: 'Portfolio', href: 'https://haseeb-codess-portfolio.netlify.app' },
+              { label: 'GitHub',    href: 'https://github.com/haseebio' },
+              { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/haseebio' },
+              { label: 'Portfolio', href: 'https://haseebio-portfolio.netlify.app' },
             ].map(l => (
               <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
                 style={{ fontSize: 12, color: '#9CA3AF', textDecoration: 'none', fontWeight: 500 }}

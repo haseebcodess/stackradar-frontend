@@ -106,10 +106,10 @@ export default function DeveloperPage() {
         </h2>
         <div className="flex flex-wrap gap-3">
           {[
-            { icon: '📧', label: 'Email',     value: 'haseebur4322@gmail.com',             href: 'mailto:haseebur4322@gmail.com' },
-            { icon: '💼', label: 'LinkedIn',  value: 'linkedin.com/in/haseebcodess',        href: 'https://linkedin.com/in/haseebio' },
-            { icon: '🐙', label: 'GitHub',    value: 'github.com/haseebcodess',             href: 'https://github.com/haseebio' },
-            { icon: '🌐', label: 'Portfolio', value: 'haseeb-codess-portfolio.netlify.app', href: 'https://haseebio-portfolio.netlify.app' },
+            { icon: '📧', label: 'Email',     value: 'haseebur341@gmail.com',             href: 'mailto:haseebur341@gmail.com' },
+            { icon: '💼', label: 'LinkedIn',  value: 'linkedin.com/in/haseebio',        href: 'https://linkedin.com/in/haseebio' },
+            { icon: '🐙', label: 'GitHub',    value: 'github.com/haseebio',             href: 'https://github.com/haseebio' },
+            { icon: '🌐', label: 'Portfolio', value: 'haseebio-portfolio.netlify.app', href: 'https://haseebio-portfolio.netlify.app' },
           ].map((link, i) => (
             <a key={i} href={link.href}
               target="_blank" rel="noopener noreferrer"
