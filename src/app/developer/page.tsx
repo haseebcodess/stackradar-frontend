@@ -273,7 +273,7 @@ export default function DeveloperPage() {
           the wrong stack. Real data, clear answers, zero noise.
         </p>
         <div className="flex gap-3 mt-5">
-          <a href="mailto:haseebur4322@gmail.com"
+          <a href="mailto:haseebur341@gmail.com"
             className="btn-primary"
             style={{ fontSize: 12, padding: '10px 20px', textDecoration: 'none' }}>
             Get in Touch →

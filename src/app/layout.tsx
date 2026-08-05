@@ -206,10 +206,11 @@ export default function RootLayout({
                   author: {
                     '@type': 'Person',
                     '@id': 'https://stackradar-dev.vercel.app/#author',
-                    name: 'Muhammad Haseeb Ur Rehman',
-                    url: 'https://haseebio-portfolio.netlify.app',
-                    image: 'https://stackradar-dev.vercel.app/profile.jpeg',
-                    jobTitle: 'Full Stack Developer',
+                      name: 'Muhammad Haseeb Ur Rehman',
+                      url: 'https://haseebio-portfolio.netlify.app',
+                      email: 'haseebur341@gmail.com',
+                      image: 'https://stackradar-dev.vercel.app/profile.jpeg',
+                      jobTitle: 'Full Stack Developer',
                     worksFor: {
                       '@type': 'Organization',
                       name: 'Freelance',
